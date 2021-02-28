@@ -1,6 +1,7 @@
 package com.calculatorTest;
 
 import com.calculator.Calculator;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,6 +17,8 @@ public class SubtractTest {
     private final int b;
     private final int expected;
     private Calculator calculator;
+
+    private final Logger logger = Logger.getLogger("test");
 
     public SubtractTest(int a, int b, int expected){
         this.a=a;
@@ -39,6 +42,7 @@ public class SubtractTest {
 
     @Test
     public void subtractTest(){
+        logger.debug("Test for substraction started");
         Assert.assertEquals(expected,calculator.subtract(a,b));
         calculator.display(calculator.subtract(a,b),a,b,"-");
     }

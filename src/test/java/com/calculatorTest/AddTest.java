@@ -1,6 +1,7 @@
 package com.calculatorTest;
 
 import com.calculator.Calculator;
+import org.apache.log4j.Logger;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -10,10 +11,13 @@ import java.util.Collection;
 
 @RunWith(Parameterized.class)
 public class AddTest {
+    private final Logger logger = Logger.getLogger("test");
+
     private final int a;
     private final int b;
     private final int expected;
     private Calculator calculator;
+
 
     public AddTest(int a,int b,int expected){
         this.a=a;
@@ -38,6 +42,7 @@ public class AddTest {
     }
     @Test
     public void addTest(){
+        logger.debug("Test for addition started");
         Assert.assertEquals(expected,calculator.add(a,b));
         calculator.display(calculator.add(a,b),a,b,"+");
     }

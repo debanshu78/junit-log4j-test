@@ -1,6 +1,7 @@
 package com.calculatorTest;
 
 import com.calculator.Calculator;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,6 +16,8 @@ public class timingCalculationTest {
     private final int n;
     private final int expected;
     private Calculator calculator;
+
+    private final Logger logger = Logger.getLogger("test");
 
     public timingCalculationTest(int n, int expected){
         this.n=n;
@@ -31,13 +34,13 @@ public class timingCalculationTest {
         return Arrays.asList(new Object[][]{
                 {5,0},
                 {2,0},
-                {15000000,0}
+                {10,0}
         });
     }
 
-    @Test(timeout = 2)
-    public void timingCalculationTest(){
-        Assert.assertEquals(expected,calculator.timingCalculation(n));
-
+    @Test(timeout = 5)
+    public void primeCheckTest(){
+        logger.debug("Test for prime check started");
+        calculator.primeCheck(n);
     }
 }

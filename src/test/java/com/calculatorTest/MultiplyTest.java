@@ -1,6 +1,7 @@
 package com.calculatorTest;
 
 import com.calculator.Calculator;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -16,6 +17,8 @@ public class MultiplyTest {
     private final int b;
     private final int expected;
     private Calculator calculator;
+
+    private final Logger logger = Logger.getLogger("test");
 
     public MultiplyTest(int a, int b, int expected){
         this.a=a;
@@ -38,6 +41,7 @@ public class MultiplyTest {
 
     @Test
     public void multiplyTest(){
+        logger.debug("Test for multiplication started");
         Assert.assertEquals(expected,calculator.multiply(a,b));
         calculator.display(calculator.multiply(a,b),a,b,"*");
     }
