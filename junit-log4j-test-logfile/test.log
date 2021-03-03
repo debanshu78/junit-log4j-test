@@ -1,18 +1,27 @@
-2021-02-28 17:39:00 DEBUG test - Test for addition started
-2021-02-28 17:39:00 DEBUG test - Test for addition started
-2021-02-28 17:39:00 DEBUG test - Test for addition started
-2021-02-28 17:39:00 DEBUG test - Test for substraction started
-2021-02-28 17:39:00 DEBUG test - Test for substraction started
-2021-02-28 17:39:00 DEBUG test - Test for substraction started
-2021-02-28 17:39:00 DEBUG test - Test for multiplication started
-2021-02-28 17:39:00 DEBUG test - Test for multiplication started
-2021-02-28 17:39:00 DEBUG test - Test for multiplication started
-2021-02-28 17:39:00 DEBUG test - Test for division with exception started
-2021-02-28 17:39:00 DEBUG test - Test for division  started
-2021-02-28 17:39:00 DEBUG test - Test for division with exception started
-2021-02-28 17:39:00 DEBUG test - Test for division  started
-2021-02-28 17:39:00 DEBUG test - Test for division with exception started
-2021-02-28 17:39:00 DEBUG test - Test for division  started
-2021-02-28 17:39:00 DEBUG test - Test for prime check started
-2021-02-28 17:39:00 DEBUG test - Test for prime check started
-2021-02-28 17:39:00 DEBUG test - Test for prime check started
+2021-03-04 02:37:36 DEBUG test - Test for addition started
+2021-03-04 02:37:36 DEBUG test - Test for addition started
+2021-03-04 02:37:36 DEBUG test - Test for addition started
+2021-03-04 02:37:36 DEBUG test - Test for subtraction started
+2021-03-04 02:37:36 DEBUG test - Test for subtraction started
+2021-03-04 02:37:36 DEBUG test - Test for subtraction started
+2021-03-04 02:37:36 DEBUG test - Test for multiplication started
+2021-03-04 02:37:36 DEBUG test - Test for multiplication started
+2021-03-04 02:37:36 DEBUG test - Test for multiplication started
+2021-03-04 02:37:36 DEBUG test - Test for division with exception started
+2021-03-04 02:37:36 DEBUG test - Test for division  started
+2021-03-04 02:37:36 DEBUG test - Test for division with exception started
+2021-03-04 02:37:36 DEBUG test - Test for division  started
+2021-03-04 02:37:36 DEBUG test - Test for division with exception started
+2021-03-04 02:37:36 DEBUG test - Test for division  started
+2021-03-04 02:37:36 DEBUG test - Test for prime check started
+2021-03-04 02:37:36 DEBUG test - Test for prime check started
+2021-03-04 02:37:36 DEBUG test - Test for prime check started
+2021-03-04 02:37:36 DEBUG test - Fails At:
+
+2021-03-04 02:37:36 ERROR test - subtractTest[2](com.calculatorTest.SubtractTest): expected:<2> but was:<0>
+2021-03-04 02:37:36 ERROR test - multiplyTest[0](com.calculatorTest.MultiplyTest): expected:<200> but was:<0>
+2021-03-04 02:37:36 ERROR test - multiplyTest[1](com.calculatorTest.MultiplyTest): expected:<4> but was:<1>
+2021-03-04 02:37:36 ERROR test - divisionTest1[0](com.calculatorTest.DivisionTest): Expected exception: java.lang.ArithmeticException
+2021-03-04 02:37:36 ERROR test - divisionTest2[1](com.calculatorTest.DivisionTest): / by zero
+2021-03-04 02:37:36 ERROR test - divisionTest1[2](com.calculatorTest.DivisionTest): Expected exception: java.lang.ArithmeticException
+2021-03-04 02:37:36 ERROR test - primeCheckTest[0](com.calculatorTest.timingCalculationTest): test timed out after 5 milliseconds
