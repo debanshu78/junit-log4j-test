@@ -42,8 +42,9 @@ public class SubtractTest {
 
     @Test
     public void subtractTest(){
-        logger.debug("Test for substraction started");
-        Assert.assertEquals(expected,calculator.subtract(a,b));
-        calculator.display(calculator.subtract(a,b),a,b,"-");
+        logger.debug("Test for subtraction started");
+        int subRes=calculator.subtract(a,b);
+        Assert.assertEquals(expected,subRes);
+        calculator.display(subRes,a,b,"-");
     }
 }

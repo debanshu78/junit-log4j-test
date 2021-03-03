@@ -43,8 +43,9 @@ public class AddTest {
     @Test
     public void addTest(){
         logger.debug("Test for addition started");
-        Assert.assertEquals(expected,calculator.add(a,b));
-        calculator.display(calculator.add(a,b),a,b,"+");
+        int addRes=calculator.add(a,b);
+        Assert.assertEquals(expected,addRes);
+        calculator.display(addRes,a,b,"+");
     }
 
 }

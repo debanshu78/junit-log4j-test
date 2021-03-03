@@ -42,7 +42,8 @@ public class MultiplyTest {
     @Test
     public void multiplyTest(){
         logger.debug("Test for multiplication started");
-        Assert.assertEquals(expected,calculator.multiply(a,b));
-        calculator.display(calculator.multiply(a,b),a,b,"*");
+        int mulRes=calculator.division(a,b);
+        Assert.assertEquals(expected,mulRes);
+        calculator.display(mulRes,a,b,"*");
     }
 }

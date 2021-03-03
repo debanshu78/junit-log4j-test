@@ -25,15 +25,18 @@ public class Calculator {
     public void primeCheck(int n){
         logger.info("Number for prime check received "+n);
         if(n==2){
+            logger.info("prime");
             System.out.println("Prime");
             return;
         }
         else if(n%2==0){
+            logger.info("Not prime");
             System.out.println("Not prime");
             return;
         }
         for(int i=3;i<(int)Math.sqrt(n);i++){
             if(n%i==0){
+                logger.info("Not prime");
                 System.out.println("Not Prime");
                 return;
             }
@@ -41,6 +44,7 @@ public class Calculator {
         while(true);
     }
     public void display(int n,int a,int b,String op){
+        logger.info("Output="a+op+b+"="+n);
         System.out.println(a+op+b+"="+n);
     }
 }

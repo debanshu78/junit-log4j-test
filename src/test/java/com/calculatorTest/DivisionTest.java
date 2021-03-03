@@ -42,8 +42,9 @@ public class DivisionTest {
     @Test(expected = java.lang.ArithmeticException.class)
     public void divisionTest1(){
         logger.debug("Test for division with exception started");
-        Assert.assertEquals(expected,calculator.division(a,b));
-        calculator.display(calculator.division(a,b),a,b,"/");
+        int divRes=calculator.division(a,b);
+        Assert.assertEquals(expected,divRes);
+        calculator.display(divRes,a,b,"/");
     }
 
     @Test
